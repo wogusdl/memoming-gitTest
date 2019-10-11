@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www/thymeleaf.org">
+<head>
+ <meta charset="EUC-KR">
+ <title>Top page</title>
+ <meta http-equiv="Content-Type"
+       Content="text/html; charset=UTF-8">
+      
+ <style>
+   h1 { font-size:18pt; font-weight:bold; color:gray; }
+   body { font-size:13pt; color:gray; marin:5px 25px; }
+ </style>
+</head>
+
+<body>
+  <h1> Hello Page</h1>
+  <p th:text="${msg}">please wait.... </p>
+  
+  <form method="post"  action="/">
+  
+   <div>
+   
+   <input type="checkbox"  id="check1"  name="check1" />
+   <label for="check1">체크</label>
+   </div>
+  
+  <div>
+   <input type="radio"  id="radioA" name="radio1"  name="male" />
+   <label for="radioA">남성</label>
+  </div>
+
+  <div>
+   <input type="radio"  id="radioB" name="radio1"  name="female" />
+   <label for="radioB">여성</label>
+  </div>  
+  
+  <select class="custom-select">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  
+  
+  
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  
+  <input type="submit"  value="Click" />
+  
+   
+  </form>
+</body>
+
+
+</html>
+
+
+<!--    <input type="text" name="text1" th:value="${value}" />
+   <input type="submit" value="Click" />
+ -->
+
+<!-- <p class="msg"> this is a Thymeleaf sample page. </p> -->
